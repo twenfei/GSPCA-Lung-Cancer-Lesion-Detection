@@ -24,25 +24,25 @@ If you would like to train a new model using a new dataset, follow the below ste
 
 **Appendix A**
 
-\&lt;#Number of non-cancerous images\&gt;
+#Number of non-cancerous images
 
-\&lt;img\_1\&gt;
+img\_1
 
-\&lt;img\_2\&gt;
+img\_2
 
 ... (original non-cancerous lung images filenames)
 
-\&lt;#Number of cancerous images\&gt;
+#Number of cancerous images
 
-\&lt;img\_1\&gt;
+img\_1
 
-\&lt;img\_2\&gt;
+img\_2
 
 ... (original cancerous lung images filenames)
 
-\&lt;binary\_map\_1\&gt;
+binary\_map\_1
 
-\&lt;binary\_map\_2\&gt;
+binary\_map\_2
 
 ... (binary prediction maps for cancerous images from the semi-automated tool filenames)
 
