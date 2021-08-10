@@ -13,10 +13,10 @@ function [noncancer_flist1, noncancer_flist2, ...
     % add path
     if (mode == 1)
         % generate file list for training
-        data_path = '../../training_data';
+        data_path = 'training_data';
     else
         % generate file list for testing
-        data_path = '../../testing_data';
+        data_path = 'testing_data';
     end
     addpath(data_path);
     
@@ -44,7 +44,7 @@ function [noncancer_flist1, noncancer_flist2, ...
     
     num_cancer = str2double(fgetl(fid));
     for i = 1 : num_cancer
-        filename = strcat('cancer-mask-' , num2str(i), '.png'); % filename for lung mask
+        filename = strcat('cancer-mask-' , num2str(i + num_noncancer), '.png'); % filename for lung mask
         cancer_flist1{i} = filename;
         cancer_flist2{i} = fgetl(fid);
         

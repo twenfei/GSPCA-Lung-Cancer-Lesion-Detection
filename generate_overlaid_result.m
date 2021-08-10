@@ -49,8 +49,7 @@ end
 % end
 
 patchSize = 20;
-
-% It should run under the directory of Histology project with folder PCANet
+%% Add paths
 addpath('./lib/PCA/');
 addpath('./lib/PCA/Utils/');
 addpath('./lib/PCA/Liblinear/');

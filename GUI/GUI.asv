@@ -1,0 +1,33 @@
+function pca_gui
+% This is a GUI for the PCANet lesion detection moodel with the following
+% functions:
+% 1. Generate and save the output binary maps.
+% 2. Output the lesion counting result. (connected componenets on binary maps)
+% 3. Demonstrate the overlaid results on the original image.
+% Written by: Wenfei Tang
+% Galban Lab, University of Michigan, Jan 2021
+
+%  Create and then hide the UI as it is being constructed.
+f = figure('Visible','off','Position',[360,500,450,285]);
+
+%% Construct the components.
+
+% Position: [distance from left, distance from bottom, width, height]
+
+% Select files from folders.
+hselect    = uicontrol('Style','pushbutton',...
+             'String','Select file','Position',[315,220,70,25]);
+% Run the model
+hrun    = uicontrol('Style','pushbutton',...
+             'String','Run','Position',[315,180,70,25]);        
+% Save the generated binary map
+hsave1 = uicontrol('Style','pushbutton',...
+             'String','Save Binary Map','Position',[315,140,70,25]);
+% Save the overlaid demo image
+hsave2 = uicontrol('Style','pushbutton',...
+             'String','Save Overlaid Result','Position',[315,100,70,25]);
+% Reset and clear everything
+hreset = uicontrol('Style','pushbutton',...
+             'String','Reset','Position',[315,60,70,25]);      
+         
+end
